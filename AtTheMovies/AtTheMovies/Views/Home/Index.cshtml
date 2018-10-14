@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+@section scripts{
+
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Client/Scripts/atTheMovies.js"></script>
+    <script src="~/Client/Scripts/Controllers/ListController.js"></script>
+
+    <script src="~/Client/Scripts/Controllers/DetailsController.js"></script>
+    <script src="~/Client/Scripts/Services/MovieService.js"></script>
+    <script src="~/Client/Scripts/Controllers/EditController.js"></script>
+}
+
+<div data-ng-app="atTheMovies">
+   <ng-view></ng-view>
+</div>

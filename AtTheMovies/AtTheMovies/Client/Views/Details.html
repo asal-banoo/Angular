@@ -1,0 +1,13 @@
+﻿<div ng-controller="DetailsController" class="row">
+    <div class="col-lg-12">
+        <h2>{{movie.title}}</h2>
+    </div>
+    <div class="col-lg-6">
+        <div>release in {{movie.ReleaseYear}}</div>
+        <div>{{movie.Runtime}} minute long.</div>
+        <button class="btn" ng-click="edit()"></button>
+    </div>
+   <div class=" col-lg-6">
+       <div ng-include="'/client/views/edit.html'"></div>
+   </div>
+</div>
